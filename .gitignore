@@ -6,7 +6,6 @@ public/
 package-lock.json
 package.json
 plopfile.js
-README.md
 tailwind.config.js
 tsconfig.app.json
 tsconfig.jsontsconfig.node.json
