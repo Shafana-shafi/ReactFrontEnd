@@ -1,0 +1,124 @@
+/* Reset and base styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url('assets/fonts/SpaceMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url('assets/fonts/SpaceMono-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url('assets/fonts/SpaceMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: bold;
+}
+
+#root {
+  width: 100%;
+  min-width: 250px;
+}
+
+
+.outerContainer {
+  width: 100%;
+  min-height: 100vh; /* Ensure it takes up the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #C5E4E7;
+  /* padding-bottom: 60px; */
+}
+
+.title {
+  font-family: 'Space Mono';
+  font-size: 1.5rem;
+  color: #00474B;
+  max-width: 93px;
+  letter-spacing: 0.47rem;
+  text-align: center; 
+  padding-bottom: 7px;
+}
+
+.first-part, .second-part {
+  display: inline-block;
+}
+
+
+.container {
+  border-radius: 16px;
+  width: 100%;
+  max-width: 1160px; 
+  margin: 0 auto; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  grid-column-gap: 4rem;
+  background-color: white;
+  padding: 2rem;
+}
+
+.cc1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 27px;
+}
+
+.cc2 {
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  .container {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .cc1, .cc2 {
+    width: 100%; /* Ensure full width on smaller screens */
+  }
+}
+
+@media (max-width: 570px) {
+  .container {
+    grid-template-columns: 1fr; /* Switch to single-column layout on smaller screens */
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .cc1, .cc2 {
+    width: 100%; /* Ensure full width on smaller screens */
+  }
+}
