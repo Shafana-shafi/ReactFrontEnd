@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { InputComponent } from './InputComponent';
 import React, { useState } from 'react';
 
-// Meta configuration for InputComponent
+
 const meta: Meta<typeof InputComponent> = {
   title: 'App/InputComponent',
   component: InputComponent,
